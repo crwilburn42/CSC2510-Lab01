@@ -18,5 +18,12 @@ while (away_the_hours) {
   	if (its_time_to_go_home) {
             break;
       }
+
+    try {
+      Thread.sleep(60000);
+     } catch (InterruptedException e) {
+ 	    // ignore
+     )
+
 }
 
