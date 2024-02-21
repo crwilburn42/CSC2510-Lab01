@@ -1,3 +1,8 @@
+
+if [ ! -d "system_info" ]; then
+  mkdir system_info
+fi
+
 cd system_info
 
 {
