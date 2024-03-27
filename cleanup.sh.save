@@ -1,0 +1,53 @@
+#!/bin/bash
+
+declare -a dirs=("images" "documents" "pdfs" "executables" "data" "unknown")
+
+declare -A file_count
+declare -A byte_count
+
+for dir in "${dirs[@]}"; do
+  if [ ! -d "$dir" ]; then
+    echo "Directory $dir does not exist. Creating..."
+    mkdir "$dir"
+  else
+    echo "Directory $dir already exists. Skipping creation."
+  fi
+done
+
+move_files() {
+  local file=$1
+  local ext="${file##*.}"
+  local dest
+
+  case $ext in
+    jpg|jpeg|png|gif)
+      dest="images"
+      ;;
+    txt|docx|doc|pages|key|pptx|ppt|odt|md)
+      dest="documents"
+      ;;
+    pdf)
+      dest="pdfs"
+      ;;
+    csv|xlsx|json)
+      dest="data"
+      ;;
+    *)
+      # Check if the file has executable permissions
+      if [[ -x "$file" ]]; then
+        dest="executables"
+      else
+        dest="unknown"
+      fi
+      ;;
+  esac
+
+  if [ "$dest" ]; then
+    mv "$file" "$dest/"
+    # Get the size of the file
+    local size=$(stat -c%s "$decrement the count of files and bytes for the destination
+    ((file_count[$dest]++))
+    ((byte_count[$dest]+=$size))
+    echo "Moved $file to $dest/"
+  fi
+}

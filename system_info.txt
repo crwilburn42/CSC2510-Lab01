@@ -1,0 +1,25 @@
+System information has been gathered. Here's the summary:
+Date and Time: 02/21/2024 18:30:58 UTC
+Current User: contessarae11
+Current Working Directory: /home/contessarae11/CSC2510-Lab01
+System Usage:
+top - 18:30:58 up  1:39,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 100 total,   1 running,  99 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    954.0 total,    511.6 free,    170.6 used,    271.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    632.2 avail Mem 
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       9.6G  2.2G  7.4G  23% /
+devtmpfs        473M     0  473M   0% /dev
+tmpfs           478M     0  478M   0% /dev/shm
+tmpfs            96M  960K   95M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           478M     0  478M   0% /sys/fs/cgroup
+/dev/loop0       64M   64M     0 100% /snap/core20/2105
+/dev/loop1       64M   64M     0 100% /snap/core20/2182
+/dev/loop2      369M  369M     0 100% /snap/google-cloud-cli/207
+/dev/loop3       92M   92M     0 100% /snap/lxd/24061
+/dev/loop4       41M   41M     0 100% /snap/snapd/20671
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+tmpfs            96M     0   96M   0% /run/user/1001

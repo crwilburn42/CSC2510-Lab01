@@ -1,0 +1,10 @@
+$ export LC_ALL=C
+$ cat food
+tuna salad  .25  100
+rare hamburger  2.50  500
+french fries  0.75  625
+tea bag  .20  0
+apple pie  2.75  1500
+milk shake  3  200
+potato chips  0.50  80
+crunchy taco  1.25 625
