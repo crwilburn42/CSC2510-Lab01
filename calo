@@ -1,0 +1,10 @@
+milk shake  3  200
+apple pie  2.75  1500
+rare hamburger  2.50  500
+crunchy taco  1.25 625
+french fries  0.75  625
+potato chips  0.50  80
+tuna salad  .25  100
+tea bag  .20  0
+$ cat food
+$ export LC_ALL=C
